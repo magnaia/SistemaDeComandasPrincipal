@@ -1,0 +1,32 @@
+@page "/edit-detalle-producto"
+
+<PageTitle>Edit DetalleProducto</PageTitle>
+
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save DetalleProducto</RadzenAlert>
+        <RadzenTemplateForm TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleProducto" Data="@detalleProducto" Visible="@(detalleProducto != null)" Submit="@FormSubmit">
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Producto" Component="Producto" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDown Data="@productosForDetproProducto" TextProperty="ProNombre" ValueProperty="ProId" AllowClear=true
+                         Placeholder="Choose Producto" style="display: block; width: 100%" @bind-Value="@detalleProducto.DetproProducto" Name="DetproProducto"
+                           />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Detpro Cantidad" Component="DetproCantidad" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenNumeric style="display: block; width: 100%" @bind-Value="@detalleProducto.DetproCantidad" Name="DetproCantidad" />
+                </RadzenColumn>
+            </RadzenRow>
+          <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

@@ -1,0 +1,42 @@
+@page "/ingredientes"
+
+<PageTitle>Ingredientes</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Ingredientes" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@ingredientes" TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" Property="IngId" Title="Ing Id">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" Property="IngNombre" Title="Ing Nombre">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" Property="IngCosto" Title="Ing Costo">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" Property="TipoIngrediente.TipingNombre" Title="Tipo Ingrediente">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Ingrediente" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="ingrediente">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, ingrediente)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>

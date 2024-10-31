@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
+using Radzen;
+using Radzen.Blazor;
+
+namespace SistemaBushidoSushiWok.Components.Pages
+{
+    public partial class DetalleProductos
+    {
+        [Inject]
+        protected IJSRuntime JSRuntime { get; set; }
+
+        [Inject]
+        protected NavigationManager NavigationManager { get; set; }
+
+        [Inject]
+        protected DialogService DialogService { get; set; }
+
+        [Inject]
+        protected TooltipService TooltipService { get; set; }
+
+        [Inject]
+        protected ContextMenuService ContextMenuService { get; set; }
+
+        [Inject]
+        protected NotificationService NotificationService { get; set; }
+
+        [Inject]
+        public BUSHIDOSUSHIWOKService BUSHIDOSUSHIWOKService { get; set; }
+
+        protected IEnumerable<SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleProducto> detalleProductos;
+
+        protected RadzenDataGrid<SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleProducto> grid0;
+        protected override async Task OnInitializedAsync()
+        {
+            detalleProductos = await BUSHIDOSUSHIWOKService.GetDetalleProductos(new Query { Expand = "Producto" });
+        }
+
+        protected async Task AddButtonClick(MouseEventArgs args)
+        {
+            await DialogService.OpenAsync<AddDetalleProducto>("Add DetalleProducto", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleProducto args)
+        {
+            await DialogService.OpenAsync<EditDetalleProducto>("Edit DetalleProducto", new Dictionary<string, object> { {"DeproId", args.DeproId} });
+        }
+
+        protected async Task GridDeleteButtonClick(MouseEventArgs args, SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleProducto detalleProducto)
+        {
+            try
+            {
+                if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+                {
+                    var deleteResult = await BUSHIDOSUSHIWOKService.DeleteDetalleProducto(detalleProducto.DeproId);
+
+                    if (deleteResult != null)
+                    {
+                        await grid0.Reload();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Error,
+                    Summary = $"Error",
+                    Detail = $"Unable to delete DetalleProducto"
+                });
+            }
+        }
+    }
+}

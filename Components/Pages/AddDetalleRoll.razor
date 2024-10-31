@@ -1,0 +1,33 @@
+@page "/add-detalle-roll"
+
+<PageTitle>Add DetalleRoll</PageTitle>
+    <RadzenColumn SizeMD=12>
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save DetalleRoll</RadzenAlert>
+        <RadzenTemplateForm TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.DetalleRoll" Data="@detalleRoll" Visible="@(detalleRoll != null)" Submit="@FormSubmit">
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Ingrediente" Component="Ingrediente" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDown Data="@ingredientesForRollIngrediente" TextProperty="" ValueProperty="IngId" AllowClear=true
+                         Placeholder="Choose Ingrediente" style="display: block; width: 100%" @bind-Value="@detalleRoll.RollIngrediente" Name="RollIngrediente"
+                           />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Detalle Producto" Component="DetalleProducto" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDown Data="@detalleProductosForRollDetproducto" TextProperty="" ValueProperty="DeproId" AllowClear=true
+                         Placeholder="Choose DetalleProducto" style="display: block; width: 100%" @bind-Value="@detalleRoll.RollDetproducto" Name="RollDetproducto"
+                           />
+                </RadzenColumn>
+            </RadzenRow>
+          <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+          </RadzenStack>
+        </RadzenTemplateForm>
+    </RadzenColumn>
+

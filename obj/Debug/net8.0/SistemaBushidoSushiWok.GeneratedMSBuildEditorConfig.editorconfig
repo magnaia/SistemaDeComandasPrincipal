@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SistemaBushidoSushiWok
+build_property.RootNamespace = SistemaBushidoSushiWok
+build_property.ProjectDir = C:\Users\abraham\Documents\SistemaDeComandas\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\abraham\Documents\SistemaDeComandas
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddBoletum.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRCb2xldHVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddCiudad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRDaXVkYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddDetalleProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGREZXRhbGxlUHJvZHVjdG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddDetalleRoll.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGREZXRhbGxlUm9sbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddIngrediente.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRJbmdyZWRpZW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddOrden.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRPcmRlbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRQcm9kdWN0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddProveedor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRQcm92ZWVkb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddRepartidor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRSZXBhcnRpZG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddSucursal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRTdWN1cnNhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddTipoIngrediente.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUaXBvSW5ncmVkaWVudGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddTipoPago.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUaXBvUGFnby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddTipoPlato.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUaXBvUGxhdG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/AddTrabajador.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUcmFiYWphZG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Boleta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb2xldGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Ciudads.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaXVkYWRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/DetalleProductos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXRhbGxlUHJvZHVjdG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/DetalleRolls.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXRhbGxlUm9sbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditBoletum.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0Qm9sZXR1bS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditCiudad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0Q2l1ZGFkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditDetalleProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0RGV0YWxsZVByb2R1Y3RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditDetalleRoll.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0RGV0YWxsZVJvbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditIngrediente.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0SW5ncmVkaWVudGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditOrden.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0T3JkZW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0UHJvZHVjdG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditProveedor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0UHJvdmVlZG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditRepartidor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0UmVwYXJ0aWRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditSucursal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0U3VjdXJzYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditTipoIngrediente.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0VGlwb0luZ3JlZGllbnRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditTipoPago.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0VGlwb1BhZ28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditTipoPlato.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0VGlwb1BsYXRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/EditTrabajador.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0VHJhYmFqYWRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Ingredientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmdyZWRpZW50ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Ordens.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Productos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0b3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Proveedors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm92ZWVkb3JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Repartidors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBhcnRpZG9ycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Sucursals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdWN1cnNhbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/TipoIngredientes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaXBvSW5ncmVkaWVudGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/TipoPagos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaXBvUGFnb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/TipoPlatos.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaXBvUGxhdG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Pages/Trabajadors.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUcmFiYWphZG9ycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/abraham/Documents/SistemaDeComandas/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 

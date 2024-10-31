@@ -1,0 +1,56 @@
+@page "/boleta"
+
+<PageTitle>Boleta</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Boleta" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@boleta" TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolId" Title="Bol Id">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolFecha" Title="Bol Fecha">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="Sucursal.SucNombre" Title="Sucursal">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolCliNombre" Title="Bol Cli Nombre">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolCliApellido" Title="Bol Cli Apellido">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolCliRut" Title="Bol Cli Rut">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolCliTelefono" Title="Bol Cli Telefono">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolCliDireccion" Title="Bol Cli Direccion">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="TipoPago.TipaNombre" Title="Tipo Pago">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolSubtotal" Title="Bol Subtotal">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Property="BolTotal" Title="Bol Total">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Boletum" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="boletum">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, boletum)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>

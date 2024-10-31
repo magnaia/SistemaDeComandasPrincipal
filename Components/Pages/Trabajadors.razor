@@ -1,0 +1,52 @@
+@page "/trabajadors"
+
+<PageTitle>Trabajadors</PageTitle>
+<RadzenStack>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Trabajadors" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+      <RadzenColumn SizeMD=12>
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"   AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PageSizeOptions=@(new int[]{5, 10, 20, 30})
+            Data="@trabajadors" TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" RowSelect="@EditRow">
+            <Columns>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraId" Title="Tra Id">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraNombre" Title="Tra Nombre">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraApellido1" Title="Tra Apellido1">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraApellido2" Title="Tra Apellido2">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="Cargo" Title="Cargo">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="Sucursal.SucNombre" Title="Sucursal">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraRun" Title="Tra Run">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraAfp" Title="Tra Afp">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Property="TraEstado" Title="Tra Estado">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="SistemaBushidoSushiWok.Models.BUSHIDOSUSHIWOK.Trabajador" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="trabajador">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, trabajador)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenColumn>
+  </RadzenRow>
+</RadzenStack>
